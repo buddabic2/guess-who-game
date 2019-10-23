@@ -20,9 +20,6 @@ const hatBtn = document.querySelector('.hat')
 const earringsBtn = document.querySelector('.earrings')
 const beardBtn = document.querySelector('.beard')
 
-
-
-
 const buttonsForValues = [maleBtn, femaleBtn, brownEyesBtn, blueEyesBtn, baldBtn, whiteHairBtn, brownHairBtn, blackHairBtn, blondeHairBtn, gingerHairBtn, longHairBtn, smallMouthBtn, glassesBtn, mustacheBtn, smallNoseBtn, hatBtn, earringsBtn, beardBtn]
 
 let currentBtnValue 
@@ -32,3 +29,6 @@ buttonsForValues.forEach(button =>{
         currentBtnValue = button.value
     })
 })
+
+
+// write a loop nested in a loop which is checking if an element belongs to the set of characteristics and add the logic to the game
