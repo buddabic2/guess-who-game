@@ -49,35 +49,23 @@ const buttonsForValues = [maleBtn, femaleBtn, brownEyesBtn, blueEyesBtn, baldBtn
 
 let currentBtnValue 
 
-let values = []
+let cardsToBeTurnedOver = []
 
-const object = {
-    male: 1, female: 2, brownEyes: 3, 
-}
-
+// double counts are possible
 function checkWhichCharactersHaveTheSamePropertyAsCurrentBtnValue (){
     characteristic.forEach(array=>{
-        array[1].forEach(property=>{
-
-            if (){
-                values.push(property)
-            } else {
-                console.log('lalala')
+        for (let i = 0; i<10; i++){
+            if(array[1][i]===currentBtnValue){
+                cardsToBeTurnedOver.push(array[0])
             }
-        })
+        }
     })
 }
 
-
 buttonsForValues.forEach(button =>{
     button.addEventListener('click', () =>{
-        currentBtnValue = button.values
+        currentBtnValue = button.value
         checkWhichCharactersHaveTheSamePropertyAsCurrentBtnValue()
     })
 
 })
-
-
-
-
-
