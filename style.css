@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: rgb(146, 98, 34);
+    min-width: 140vw;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+.navbar h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.main-body {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.row {
+    min-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rules, .stats {
+    min-width: 20vw;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 120px;
+}
+
+.computers-choice {
+    margin: 30px auto;
+    max-width: 150px;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(48, 47, 47) ;
+}
+
+/* choices */
+
+button {
+    font-size: 20px;
+    padding: 3px 3px;
+    margin: 3px 3px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(48, 47, 47) ;
+}
+
+/* .sex, .eyes, .hair, .other {
+    display: none;
+} */
