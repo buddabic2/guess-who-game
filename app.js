@@ -57,15 +57,42 @@ let x = true
 let cardsToBeTurnedOver = []
 
 // double counts are possible
-function checkWhichCharactersHaveTheSamePropertyAsCurrentBtnValue (){
+function ifUserGuessedCorrectly (){
     characteristic.forEach(array=>{
-        for (let i = 0; i<10; i++){
-            if(array[1][i]===currentBtnValue){
-                cardsToBeTurnedOver.push(array[0])
-            }
+        if (!array[1].includes(currentBtnValue)){
+            cardsToBeTurnedOver.push(array[0])
         }
     })
 }
+
+function ifUserGuessedIncorrectly (){
+    characteristic.forEach(array=>{
+        if (array[1].includes(currentBtnValue)){
+            cardsToBeTurnedOver.push(array[0])
+        }
+    })
+}
+
+// for (let i = 0; i<array[1].length; i++){
+//     if(array[1][i].includes(curr)){
+//         cardsToBeTurnedOver.push(array[0])
+//     }
+// }
+// function ifConsoleLogsNee (){
+    //     characteristic.forEach(array=>{
+//         for (let i = 0; i<array[1].length; i++){
+//             if(array[1][i]!==currentBtnValue){
+//                 cardsToBeTurnedOver.push(array[0])
+//             }
+//         }
+//     })
+// }
+
+
+
+
+
+
 
 //gets users choice
 
@@ -76,9 +103,11 @@ buttonsForValues.forEach(button =>{
         if (x===true){
             console.log('yee')
             // turn cards that do not have my characteristic
+            ifUserGuessedCorrectly()
         } else {
             console.log('nee')
             // turn cards that have my characteristic
+            ifUserGuessedIncorrectly()
         }
     })
     
@@ -90,29 +119,3 @@ function checkIfUserChoseACHaracteristicsThatComputersChoiceHas(){
     x = computersChoiceCharacteristics.includes(currentBtnValue)
     return x
 }
-
-
-
-
-// function checkIfUserChoseACHaracteristicsThatComputersChoiceHas(){
-//     for(let i = 0; i < computersChoiceCharacteristics.length; i++){
-//         if(char===currentBtnValue){
-//             break
-//         } else {
-//             x = false
-//             return x
-//         }
-//     }
-    // computersChoiceCharacteristics.forEach(char=>{
-    //     if(char===currentBtnValue){
-    //         break
-    //     } else {
-    //         x = false
-    //         console.log(x)
-    //         return x
-    //     }
-    // })
-
-
-
-
