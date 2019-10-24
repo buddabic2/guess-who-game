@@ -47,7 +47,12 @@ const beardBtn = document.querySelector('.beard')
 
 const buttonsForValues = [maleBtn, femaleBtn, brownEyesBtn, blueEyesBtn, baldBtn, whiteHairBtn, brownHairBtn, blackHairBtn, blondeHairBtn, gingerHairBtn, longHairBtn, smallMouthBtn, glassesBtn, mustacheBtn, smallNoseBtn, hatBtn, earringsBtn, beardBtn]
 
-let currentBtnValue 
+let computersChoice = Math.floor(Math.random()*24)
+let computersChoiceCharacteristics = characteristic[computersChoice][1]
+
+let currentBtnValue
+
+let x = true
 
 let cardsToBeTurnedOver = []
 
@@ -62,10 +67,52 @@ function checkWhichCharactersHaveTheSamePropertyAsCurrentBtnValue (){
     })
 }
 
+//gets users choice
+
 buttonsForValues.forEach(button =>{
     button.addEventListener('click', () =>{
         currentBtnValue = button.value
-        checkWhichCharactersHaveTheSamePropertyAsCurrentBtnValue()
+        checkIfUserChoseACHaracteristicsThatComputersChoiceHas()
+        if (x===true){
+            console.log('yee')
+            // turn cards that do not have my characteristic
+        } else {
+            console.log('nee')
+            // turn cards that have my characteristic
+        }
     })
-
+    
 })
+
+// Check if the user chose the characteristic that computers choice has
+
+function checkIfUserChoseACHaracteristicsThatComputersChoiceHas(){
+    x = computersChoiceCharacteristics.includes(currentBtnValue)
+    return x
+}
+
+
+
+
+// function checkIfUserChoseACHaracteristicsThatComputersChoiceHas(){
+//     for(let i = 0; i < computersChoiceCharacteristics.length; i++){
+//         if(char===currentBtnValue){
+//             break
+//         } else {
+//             x = false
+//             return x
+//         }
+//     }
+    // computersChoiceCharacteristics.forEach(char=>{
+    //     if(char===currentBtnValue){
+    //         break
+    //     } else {
+    //         x = false
+    //         console.log(x)
+    //         return x
+    //     }
+    // })
+
+
+
+
