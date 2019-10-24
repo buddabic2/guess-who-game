@@ -73,27 +73,6 @@ function ifUserGuessedIncorrectly (){
     })
 }
 
-// for (let i = 0; i<array[1].length; i++){
-//     if(array[1][i].includes(curr)){
-//         cardsToBeTurnedOver.push(array[0])
-//     }
-// }
-// function ifConsoleLogsNee (){
-    //     characteristic.forEach(array=>{
-//         for (let i = 0; i<array[1].length; i++){
-//             if(array[1][i]!==currentBtnValue){
-//                 cardsToBeTurnedOver.push(array[0])
-//             }
-//         }
-//     })
-// }
-
-
-
-
-
-
-
 //gets users choice
 
 buttonsForValues.forEach(button =>{

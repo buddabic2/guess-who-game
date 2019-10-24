@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -65,7 +65,7 @@ img:hover {
 
 /* choices */
 
-button {
+/* button {
     font-size: 20px;
     padding: 3px 3px;
     margin: 3px 3px;
@@ -80,4 +80,4 @@ button:hover {
 
 .sex, .eyes, .hair, .other {
     display: none;
-}
+} */ 

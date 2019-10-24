@@ -61,34 +61,34 @@
                     <img class="computers-choice" src="./images/BacksideOfCard.jpg" alt="Computer's choice">
                 </div>
                 <div class="row">
-                    <img src="./images/jean-claude.png" alt="Jean Claude">
-                    <img src="./images/pierre.png" alt="Pierre">
-                    <img src="./images/jean.png" alt="Jean">
-                    <img src="./images/amelie.png" alt="Amelie">
-                    <img src="./images/mirabelle.png" alt="Mirabelle">
-                    <img src="./images/isabelle.png" alt="Isabelle">
-                    <img src="./images/antonin.png" alt="Antonin">
-                    <img src="./images/bernard.png" alt="Bernard">
+                    <img src="./images/jean-claude.png" class="Jean Claude">
+                    <img src="./images/pierre.png" class="Pierre">
+                    <img src="./images/jean.png" class="Jean">
+                    <img src="./images/amelie.png" class="Amelie">
+                    <img src="./images/mirabelle.png" class="Mirabelle">
+                    <img src="./images/isabelle.png" class="Isabelle">
+                    <img src="./images/antonin.png" class="Antonin">
+                    <img src="./images/bernard.png" class="Bernard">
                 </div>
                 <div class="row">
-                    <img src="./images/owen.png" alt="Owen">
-                    <img src="./images/dylan.png" alt="Dylan">
-                    <img src="./images/herbert.png" alt="Herbert">
-                    <img src="./images/christine.png" alt="Christine">
-                    <img src="./images/luc.png" alt="Luc">
-                    <img src="./images/cecilian.png" alt="Cecilian">
-                    <img src="./images/lionel.png" alt="Lionel">
-                    <img src="./images/benoit.png" alt="Benoit">
+                    <img src="./images/owen.png" class="Owen">
+                    <img src="./images/dylan.png" class="Dylan">
+                    <img src="./images/herbert.png" class="Herbert">
+                    <img src="./images/christine.png" class="Christine">
+                    <img src="./images/luc.png" class="Luc">
+                    <img src="./images/cecilian.png" class="Cecilian">
+                    <img src="./images/lionel.png" class="Lionel">
+                    <img src="./images/benoit.png" class="Benoit">
                 </div>
                 <div class="row">
-                    <img src="./images/robert.png" alt="Robert">
-                    <img src="./images/charline.png" alt="Charline">
-                    <img src="./images/renaud.png" alt="Renaud">
-                    <img src="./images/michel.png" alt="Michel">
-                    <img src="./images/pierre-louis.png" alt="Pierre-Luois">
-                    <img src="./images/etienne.png" alt="Etienne">
-                    <img src="./images/henri.png" alt="henri">
-                    <img src="./images/damien.png" alt="Damien">
+                    <img src="./images/robert.png" class="Robert">
+                    <img src="./images/charline.png" class="Charline">
+                    <img src="./images/renaud.png" class="Renaud">
+                    <img src="./images/michel.png" class="Michel">
+                    <img src="./images/pierre-louis.png" class="Pierre-Luois">
+                    <img src="./images/etienne.png" class="Etienne">
+                    <img src="./images/henri.png" class="henri">
+                    <img src="./images/damien.png" class="Damien">
                 </div>
         </div>
         <div class="stats">
@@ -98,5 +98,30 @@
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="buttonsInMenu.js"></script>
+     <!-- Mocha setup -->
+  <div id="mocha"></div>
+  <script src="https://unpkg.com/chai/chai.js"></script>
+  <script src="https://unpkg.com/mocha/mocha.js"></script>
+​
+  <script class="mocha-init">
+    mocha.setup('bdd');
+    mocha.checkLeaks();
+  </script>
+​
+  <!-- Main code -->
+  <script>
+    // write your code here
+  </script>
+​
+  <!-- tests -->
+  <script>
+    const expect = chai.expect
+  </script>
+  <script src="tests.js">
+    // write your tests here
+  </script>
+  <script class="mocha-exec">
+    mocha.run();
+  </script>
 </body>
 </html>
