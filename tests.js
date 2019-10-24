@@ -13,6 +13,16 @@ describe('Guess who?', ()=>{
             it('checks if there are 24 characters in the game', ()=>{
                 expect(characteristic).to.have.lengthOf(24)
             })
+            it('checks if the there is an array that represents cards that are turned over',()=>{
+                expect(cardsToBeTurnedOver).to.be.a('array')
+            })
+            it('checks if there is a variable called x which is a bool that lets us know if we guessed some characteristic of the character', ()=>{
+                expect(x).to.be.a('boolean')
+            })
+        })
+
+        describe('getting the user to interact with the website/variables correctyl', ()=>{
+            it('checks')
         })
     })
 })
